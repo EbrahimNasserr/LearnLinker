@@ -1,0 +1,341 @@
+$color-bg-dark: #2E2F32;
+$color-bg-light: #E0E7F6;
+$color-switch-dark: #16171A;
+$color-switch-light: #ebebeb;
+$color-text-dark: rgba(#4F545E, 0.4);
+$color-text-light: rgba(#CCD7EA, 0.8);
+$color-switch-button: #0451FB;
+
+.main {
+  //start animations & add colors
+  &--light {
+    background-color: $color-bg-light;
+    #switch {
+      background-color: $color-switch-light;
+      animation: clickOn .5s;
+
+      .btn-switch {
+        right: auto;
+        left: 9%;
+        animation: animationClickOn .7s;
+      }
+
+      .bxs-moon {
+        animation: rotateOn .7s;
+      }
+
+      .bxs-sun {
+        animation: shakeOn .7s;
+      }
+    }
+  }
+  //start animations & add colors
+  &--dark {
+    background-color: $color-bg-dark;
+
+    #switch {
+      background-color: $color-switch-dark;
+      animation: clickOff .5s;
+
+      .btn-switch {
+        left: auto;
+        right: 9%;
+        animation: animationClickOff .7s;
+      }
+
+      .bxs-moon {
+        animation: rotateOff .7s;
+      }
+
+      .bxs-sun {
+        animation: shakeOff .7s;
+      }
+    }
+  }
+
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .text {
+
+
+    &--light {
+      left: -7vw;
+      color: $color-text-dark;
+    }
+
+    &--dark {
+      left: 5rem;
+      color: $color-text-light;
+    }
+    //responsive
+    @media only screen and (max-width: 1130px) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+
+      &--light {
+        left: -5rem;
+      }
+
+      &--dark {
+        left: 4rem;
+      }
+    }
+    //responsive
+    @media only screen and (min-width: 1800px) {
+      font-size: 11rem;
+      line-height: 9rem;
+
+      &--light {
+        left: -8rem;
+      }
+
+      &--dark {
+        left: 5.5rem;
+      }
+    }
+  }
+
+  #switch {
+    border: none;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 4vw;
+    position: absolute;
+    cursor: pointer;
+    overflow: hidden;
+
+
+    .btn-switch {
+      display: block;
+      background-color: $color-switch-button;
+      width: 25px;
+    height: 25px;
+      border-radius: 3vw;
+      position: absolute;
+      z-index: 0;
+      top: 13%;
+      margin-left: 1px;
+    }
+
+    i {
+      font-size: 1rem;
+      position: absolute;
+      z-index: 1;
+      top: 15%;
+      color: $color-text-light;
+
+      &.bxs-sun {
+        left: 15%;
+      }
+
+      &.bxs-moon {
+        right: 15%;
+      }
+    }
+
+  }
+}
+// animations
+@keyframes clickOff {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(0.9);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes clickOn {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(0.9);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes shakeOff {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+
+    40% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+
+    50% {
+      transform: scale3d(0.85, 1.15, 1);
+    }
+
+    65% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+
+    75% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  @keyframes shakeOn {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  @keyframes rotateOff {
+    50% {
+      transform: rotate(180deg);
+    }
+  }
+
+  @keyframes rotateOn {
+    50% {
+      transform: rotate(-180deg);
+    }
+  }
+
+  @keyframes animationClickOff {
+    0% {
+      right: auto;
+      left: 9%;
+    }
+
+    50% {
+      width: 13vw;
+    }
+
+    100% {
+      left: auto;
+      right: 9%;
+    }
+  }
+
+  @keyframes animationClickOn {
+    0% {
+      left: auto;
+      right: 9%;
+    }
+
+    50% {
+      width: 13vw;
+    }
+
+    100% {
+      right: auto;
+      left: 9%;
+    }
+  }
+  //responsive
+  @media only screen and (max-width: 1130px) {
+    @keyframes animationClickOff {
+      0% {
+        right: auto;
+        left: 9%;
+      }
+
+      50% {
+        width: 8.5rem;
+      }
+
+      100% {
+        left: auto;
+        right: 9%;
+      }
+    }
+
+    @keyframes animationClickOn {
+      0% {
+        left: auto;
+        right: 9%;
+      }
+
+      50% {
+        width: 8.5rem;
+      }
+
+      100% {
+        right: auto;
+        left: 9%;
+      }
+    }
+  }
+  //responsive
+  @media only screen and (min-width: 1800px) {
+    @keyframes animationClickOff {
+        0% {
+          right: auto;
+          left: 9%;
+        }
+
+        50% {
+          width: 13rem;
+        }
+
+        100% {
+          left: auto;
+          right: 9%;
+        }
+      }
+
+      @keyframes animationClickOn {
+        0% {
+          left: auto;
+          right: 9%;
+        }
+
+        50% {
+          width: 13rem;
+        }
+
+        100% {
+          right: auto;
+          left: 9%;
+        }
+      }
+    }
