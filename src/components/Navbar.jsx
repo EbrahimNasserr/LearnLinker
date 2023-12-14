@@ -92,7 +92,7 @@ const Navbar = () => {
       transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
       className={
         !navState
-          ? "w-full flex dark:bg-blackColor justify-between md:flex-row-reverse px-24 sm:px-3 fixed top-0 left-0 items-center z-50"
+          ? "w-full flex h-24 dark:bg-blackColor justify-between md:flex-row-reverse px-24 sm:px-3 fixed top-0 left-0 items-center z-50"
           : "w-full h-20 mm flex justify-between md:flex-row-reverse px-24 sm:px-3 py-6 duration-300 fixed top-0 left-0 items-center z-50 bg-whiteColor dark:bg-blackColor"
       }
     >
