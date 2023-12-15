@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import "../App.scss";
@@ -41,16 +41,16 @@ const DarkMode = () => {
   };
 
   return (
-    <div class="main main--light " id="main">
-      <span class="text text--light"></span>
-      <span class="text text--dark"></span>
+    <div className="main main--light " id="main">
+      <span className="text text--light"></span>
+      <span className="text text--dark"></span>
 
       <button type="button" id="switch" onClick={handleThemeSwitch}>
-        <i class="bx bxs-sun">
+        <i className="bx bxs-sun">
           <FontAwesomeIcon icon={faSun} />
         </i>
-        <span class="btn-switch"></span>
-        <i class="bx bxs-moon">
+        <span className="btn-switch"></span>
+        <i className="bx bxs-moon">
           <FontAwesomeIcon icon={faMoon} />
         </i>
       </button>
