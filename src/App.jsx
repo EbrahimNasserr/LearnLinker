@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import CourseWeb from "./pages/CourseWeb";
 import "./App.css";
 import SoftwareCourse from "./pages/SoftwareCourse";
-import FlutterCourse from "./pages/flutterCourse";
+import FlutterCourse from "./pages/FlutterCourse";
 
 const App = () => {
   return (
