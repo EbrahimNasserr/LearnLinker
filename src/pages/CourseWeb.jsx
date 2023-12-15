@@ -53,7 +53,10 @@ const CourseDetails = () => {
                   rel="noopener noreferrer"
                   className=" flex justify-between items-center flex-row-reverse dark:text-whiteColor dark:hover:text-primaryColor hover:text-primaryColor sm:text-lg transition-all text-3xl"
                 >
-                  Watch the course
+                  <div className=" flex items-center justify-center gap-3 flex-row-reverse">
+                    <div className=" w-2 h-2 rounded-full bg-blackColor dark:bg-whiteColor"></div>
+                    Watch the course
+                  </div>
                   <img src={html} className=" w-48 h-40" alt="" />
                 </a>
               </div>
@@ -67,7 +70,10 @@ const CourseDetails = () => {
                   rel="noopener noreferrer"
                   className=" flex justify-between items-center flex-row-reverse dark:text-whiteColor dark:hover:text-primaryColor hover:text-primaryColor sm:text-lg transition-all text-3xl"
                 >
-                  Watch the course
+                  <div className=" flex items-center justify-center gap-3 flex-row-reverse">
+                    <div className=" w-2 h-2 rounded-full bg-blackColor dark:bg-whiteColor"></div>
+                    Watch the course
+                  </div>
                   <img src={css} className=" w-48 h-40" alt="" />
                 </a>
               </div>
@@ -81,7 +87,10 @@ const CourseDetails = () => {
                   rel="noopener noreferrer"
                   className=" flex justify-between items-center flex-row-reverse dark:text-whiteColor dark:hover:text-primaryColor hover:text-primaryColor sm:text-lg transition-all text-3xl"
                 >
-                  Watch the course
+                  <div className=" flex items-center justify-center gap-3 flex-row-reverse">
+                    <div className=" w-2 h-2 rounded-full bg-blackColor dark:bg-whiteColor"></div>
+                    Watch the course
+                  </div>
                   <img src={javascript} className=" w-48 h-40" alt="" />
                 </a>
               </div>
@@ -95,7 +104,10 @@ const CourseDetails = () => {
                   rel="noopener noreferrer"
                   className=" flex justify-between items-center flex-row-reverse dark:text-whiteColor dark:hover:text-primaryColor hover:text-primaryColor sm:text-lg transition-all text-3xl"
                 >
-                  Watch the course
+                  <div className=" flex items-center justify-center gap-3 flex-row-reverse">
+                    <div className=" w-2 h-2 rounded-full bg-blackColor dark:bg-whiteColor"></div>
+                    Watch the course
+                  </div>
                   <img src={react} className=" w-48 h-40" alt="" />
                 </a>
               </div>
@@ -119,7 +131,10 @@ const CourseDetails = () => {
                   rel="noopener noreferrer"
                   className=" flex justify-between items-center flex-row-reverse dark:text-whiteColor dark:hover:text-primaryColor hover:text-primaryColor sm:text-lg transition-all text-3xl"
                 >
-                  Watch the course
+                  <div className=" flex items-center justify-center gap-3 flex-row-reverse">
+                    <div className=" w-2 h-2 rounded-full bg-blackColor dark:bg-whiteColor"></div>
+                    Watch the course
+                  </div>
                   <img src={node} className=" w-48 h-40" alt="" />
                 </a>
               </div>
@@ -133,7 +148,10 @@ const CourseDetails = () => {
                   rel="noopener noreferrer"
                   className=" flex justify-between items-center flex-row-reverse dark:text-whiteColor dark:hover:text-primaryColor hover:text-primaryColor sm:text-lg transition-all text-3xl"
                 >
-                  Watch the course
+                  <div className=" flex items-center justify-center gap-3 flex-row-reverse">
+                    <div className=" w-2 h-2 rounded-full bg-blackColor dark:bg-whiteColor"></div>
+                    Watch the course
+                  </div>
                   <img src={php} className=" w-48 h-40" alt="" />
                 </a>
               </div>
@@ -147,7 +165,10 @@ const CourseDetails = () => {
                   rel="noopener noreferrer"
                   className=" flex justify-between items-center flex-row-reverse dark:text-whiteColor dark:hover:text-primaryColor hover:text-primaryColor sm:text-lg transition-all text-3xl"
                 >
-                  Watch the course
+                  <div className=" flex items-center justify-center gap-3 flex-row-reverse">
+                    <div className=" w-2 h-2 rounded-full bg-blackColor dark:bg-whiteColor"></div>
+                    Watch the course
+                  </div>
                   <img src={python} className=" w-48 h-40" alt="" />
                 </a>
               </div>

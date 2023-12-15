@@ -103,7 +103,7 @@ const Footer = () => {
         </div>
       </div>
       <div className=" flex justify-center items-center text-xl p-2 font-bold bg-lightBlueColor text-whiteColor">
-        Development & design
+        Development & design by Ebrahim Nasser
       </div>
     </div>
   );

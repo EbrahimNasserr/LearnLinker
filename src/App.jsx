@@ -8,6 +8,8 @@ import Register from "./pages/Register";
 import Footer from "./components/Footer";
 import CourseWeb from "./pages/CourseWeb";
 import "./App.css";
+import SoftwareCourse from "./pages/SoftwareCourse";
+import FlutterCourse from "./pages/flutterCourse";
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/course/webDevelopment" element={<CourseWeb />} />
+          <Route path="/course/software" element={<SoftwareCourse />} />
+          <Route path="/course/flutter" element={<FlutterCourse />} />
         </Routes>
         <footer>
           <Footer />

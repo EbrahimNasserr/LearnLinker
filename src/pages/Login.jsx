@@ -1,10 +1,8 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import loginPhoto from "../assets/login-img.svg";
 import Aos from "aos";
 
-const login = () => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+const Login = () => {
   useEffect(() => {
     Aos.init({
       // Global settings (optional)
@@ -14,26 +12,19 @@ const login = () => {
     });
   }, []);
   return (
-    <section className=" relative h-screen md:px-5">
-      <div className=" md:hidden">
-        <img
-          src={loginPhoto}
-          alt="login.png"
-          className=" absolute left-0 top-0 h-screen object-cover bg-cover bg-center -z-10"
-        />
-      </div>
-      <div className=" flex items-center justify-end lg:justify-center z-50 flex-row-reverse">
-        <div className=" text-right h-[30rem] flex flex-col justify-end sm:h-[80vh]">
-          <h2 className=" text-6xl lg:text-5xl mb-8 font-bold relative dark:text-whiteColor">
+    <section className=" relative bg-blend-darken h-screen p-24 login-section md:px-10">
+      <div className=" flex items-center justify-center lg:justify-center z-50">
+        <div className=" text-right h-[70vh] w-[25rem] z-10 box blur-box relative top-10 overflow-hidden flex flex-col py-12">
+          <h2 className=" z-10 text-5xl lg:text-4xl md:text-3xl mb-8 font-bold relative dark:text-whiteColor">
             تسجيل الدخول
             <span className=" text-yellowColor">.</span>
           </h2>
-          <p className=" text-2xl font-thin dark:text-whiteColor">
+          <p className=" z-10 text-xl md:text-lg sm:text-base font-thin dark:text-whiteColor">
             ادخل علي حسابك بإدخال رقم الهاتف و كلمة المرور المسجل بهم من قبل
           </p>
           <form
             action=""
-            className=" w-100% relative h-1/2 flex justify-center text-right flex-col"
+            className=" w-full z-10 relative h-2/5 flex justify-center text-right flex-col"
             data-aos="zoom-out"
           >
             <div className=" form__div">
@@ -59,11 +50,12 @@ const login = () => {
               </label>
             </div>
           </form>
-          <div className=" flex mt-5 flex-row items-center gap-6">
-            <p className=" dark:text-whiteColor">لا يوجد لديك حساب؟</p>
+          <div className=" flex mt-5 flex-row z-10 items-center gap-6 sm:flex-col">
+            <p className=" dark:text-whiteColor sm:text-base">
+              لا يوجد لديك حساب؟
+            </p>
             <Link to={"/register"} className=" btn px-2">
-              {" "}
-              انشئ حسابك الان !{" "}
+              انشئ حسابك الان !
             </Link>
           </div>
         </div>
@@ -72,4 +64,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;

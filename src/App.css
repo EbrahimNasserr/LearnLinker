@@ -312,7 +312,7 @@
   @media (max-width: 767px) {
     .anim,
     .anim svg {
-      top: -365px;
+      top: -405px;
     }
   }
   .anim path {
