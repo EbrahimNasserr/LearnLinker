@@ -5,14 +5,14 @@ const FlutterCourse = () => {
   return (
     <section>
       <div className=" flex items-center">
-        <div className=" w-full h-[90%] flex z-20 flex-row lg:flex-col relative gap-8 lg:h-[110%] justify-center bg bg-[#334155] overflow-hidden bg-blend-soft-light p-16 sm:p-5 mt-10 rounded-3xl">
+        <div className=" w-full h-[90%] flex z-20 flex-row relative gap-8 lg:h-[110%] justify-center bg bg-[#334155] overflow-hidden bg-blend-soft-light p-16 sm:p-5 mt-10 rounded-3xl">
           <div className=" absolute top-0 left-0 w-full h-full bg-gradient -z-10"></div>
           <h1 className=" font-bold text-5xl md:text-4xl text-whiteColor sm:text-3xl">
             Flutter Developer
           </h1>
         </div>
       </div>
-      <div className=" px-16 md:px-3 py-5">
+      <div className=" px-16 md:px-3 py-5 mt-5">
         <div className="  flex flex-row justify-center items-center md:flex-col-reverse">
           <div className=" md:relative md:bottom-10 flex flex-col">
             <img
